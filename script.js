@@ -55,7 +55,7 @@ function calculate() {
                 handleKeyPress(key, 'div[id="ph"]', deleteLastChar);
                 break;
             case 'Escape':
-                handleKeyPress(key, 'td[id="clr"]', clearDisplay);
+                handleKeyPress(key, 'div[id="clr"]', clearDisplay);
                 break;
             default:
                 handleKeyPress(key, `input[value="${key}"]`, () => {
@@ -64,37 +64,3 @@ function calculate() {
                 });
         }
     });
-
-// METHOD OF KEYBOARD KEY EVENTS   
-/*var display = document.getElementById('display');
-   document.addEventListener('keydown', function (event) 
-   {
-        switch (event.key) {
-            case 'Enter':
-                document.querySelector('input[value="="]').click();
-                break;
-            case 'Backspace':
-                deleteLastChar();
-                break;
-            case 'Escape':
-                clearDisplay();
-                break;
-            case '+':
-            case '-':
-            case '*':
-            case '/':
-            case '%':
-            case '.':    
-                // When operator keys are pressed
-                document.querySelector(`input[value="${event.key}"]`).click();
-                break;
-            default:
-                // For numeric keys
-                if (!isNaN(event.key)) {
-                    document.querySelector(`input[value="${event.key}"]`).click();
-                }
-        }
-    });*/
-
-
-        
